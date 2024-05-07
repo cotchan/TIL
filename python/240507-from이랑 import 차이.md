@@ -82,9 +82,7 @@ from os import *
 - 하나의 함수만 가져오는 것도 가능. (함수 사용법은 case2와 같음)
 - 와일드 임포트는 뜻하지 않게 기존의 변수나 함수를 덮어 쓸 때가 있을 수 있으므로 해당 방법이 바람직함.
 
-
-
 ## References
 
-- [](https://coding-kindergarten.tistory.com/73)
-- [](https://kevinitcoding.tistory.com/entry/%EA%B8%B0%EC%B4%88-%ED%8C%8C%EC%9D%B4%EC%8D%ACPython-from%EA%B3%BC-import%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%97%90-%EB%8C%80%ED%95%B4-%EB%B0%B0%EC%9B%8C%EB%B3%B4%EC%9E%90)
+- [[python 기초] import OO와 from OO import*의 차이](https://coding-kindergarten.tistory.com/73)
+- [[기초] 파이썬(Python) from과 import의 차이에 대해 배워보자.](https://kevinitcoding.tistory.com/entry/%EA%B8%B0%EC%B4%88-%ED%8C%8C%EC%9D%B4%EC%8D%ACPython-from%EA%B3%BC-import%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%97%90-%EB%8C%80%ED%95%B4-%EB%B0%B0%EC%9B%8C%EB%B3%B4%EC%9E%90)
