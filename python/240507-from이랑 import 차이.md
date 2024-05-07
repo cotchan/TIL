@@ -1,4 +1,4 @@
-## python from 이랑 import 차이
+## python from이랑 import 차이
 
 - `모듈을 불러와서 사용할 때` 입력하는 import와 from의 의미/차이에 대해
 
@@ -6,6 +6,7 @@
 
 1. [결론: from과 import의 차이는?](#결론-from과-import의-차이는)
 1. [from 모듈명 import 함수](#from-모듈명-import-함수)
+1. [import 모듈명](#import-모듈명)
 1. [사용 예시](#사용-예시)
     - [import os](#import-os)
     - [from os import *](#from-os-import-)
@@ -15,14 +16,41 @@
 ## 결론: from과 import의 차이는?
 
 - `from`으로 모듈(.py)을 호출해서 사용할 때는 `함수명()`으로 사용
-- `import`로 모듈(.py)을 호출해서 사용할 때는 `모듈명.함수명()`응로 사용
+- `import`로 모듈(.py)을 호출해서 사용할 때는 `모듈명.함수명()`으로 사용
 
 ## from 모듈명 import 함수
 
 - 보통 `모듈 안의 특정함수만 사용하고 싶을 때` 많이 활용
-- from 모듈명 import 함수
 
 어떤 모듈로부터 특정 함수만 내 프로그램으로 포함시킨다.
+
+```python
+from numpy import arange
+
+print(arange(0, 10))
+# [0 1 2 3 4 5 6 7 8 9]
+```
+
+- `*`로 모든 함수 가져오기도 가능
+- 이때 주의할 점은 from으로 불러온 모듈에 `같은 이름의 함수가 있으면` 문제가 발생.
+
+```python
+from numpy import *
+
+print(arange(0, 10))
+# [0 1 2 3 4 5 6 7 8 9]
+```
+
+## import 모듈명
+
+모듈을 통째로 포함했으므로 모듈 안의 함수/클래스를 사용하기 위해서는 `모듈명.함수명()` 규칙을 준수해야 한다.
+
+```python
+import numpy as np
+
+print(np.arange(0,10))
+# [0 1 2 3 4 5 6 7 8 9]
+```
 
 ## 사용 예시
 
@@ -47,7 +75,6 @@ from os import *
 ```
 
 - 현재 python 파일에서 listdir 함수를 사용하려면 `listdir()`만 사용하면 됨.
-- 이때 주의할 점은 from으로 불러온 모듈에 `같은 이름의 함수가 있으면` 문제가 발생.
 - 참고로, import *를 와일드 임포트(wild import)라고 부름.
 
 ### from os import listdir
