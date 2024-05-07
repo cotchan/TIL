@@ -1,6 +1,6 @@
-## python from이랑 import 차이
+## python from과 import 차이
 
-- `모듈을 불러와서 사용할 때` 입력하는 import와 from의 의미/차이에 대해
+- `모듈을 불러와서 사용할 때` 입력하는 from과 import 의미/차이에 대해
 
 ## 목차
 
