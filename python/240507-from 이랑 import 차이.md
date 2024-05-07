@@ -31,14 +31,14 @@ os 모듈의 listdir 함수를 사용하는 상황을 예로 설명
 - `모듈`: os (운영체제에서 제공되는 여러 기능을 다룰 수 있는 파이썬 모듈)
 - `모듈 내의 함수`: listdir (현재 경로의 파일 또는 폴더의 리스트를 반환하는 함수)
 
-### import os 
+### import os
 
 ```python
 import os
 ```
 
 - os 모듈을 불러오는 것
-- 현재 python 파일에서 listdir 함수를 사용 하려면 os.listdir( )이라고 입력해야함.
+- 현재 python 파일에서 listdir 함수를 사용 하려면 `os.listdir()`이라고 입력해야함.
 
 ### from os import *
 
@@ -46,7 +46,9 @@ import os
 from os import *
 ```
 
-- os모듈로부터 모두(*) import
+- 현재 python 파일에서 listdir 함수를 사용하려면 `listdir()`만 사용하면 됨.
+- 이때 주의할 점은 from으로 불러온 모듈에 `같은 이름의 함수가 있으면` 문제가 발생.
+- 참고로, import *를 와일드 임포트(wild import)라고 부름.
 
 ### from os import listdir
 
