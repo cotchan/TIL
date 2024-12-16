@@ -120,3 +120,4 @@ POST _reindex
 ## References
 
 - [7.2.3 날짜 - date](https://esbook.kimjmin.net/07-settings-and-mappings/7.2-mappings/7.2.3-date)
+- [[TIL-20240805] ElasticSearch + Spring Boot 연동 오류 해결](https://yeon-dev.tistory.com/251)
